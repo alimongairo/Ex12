@@ -5,7 +5,8 @@
 int main() {
   TimedDoor tDoor(5);
   tDoor.lock();
+  tDoor.throwState();
   tDoor.unlock();
-
+  tDoor.throwState();
   return 0;
 }
