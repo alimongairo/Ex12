@@ -14,6 +14,7 @@ void DoorTimerAdapter::Timeout() {
   door.DoorTimeOut();
 }
 
+
 /* TIMED DOOR */
 
 TimedDoor::TimedDoor(int t)
@@ -32,13 +33,14 @@ void TimedDoor::DoorTimeOut() { throw std::string("close the door!"); }
 
 void TimedDoor::throwState() {
   if (opened == true) {
-    throw std::string("Opened");
+    throw std::string("the door is opened!");
   } else {
-    throw std::string("Closed");
+    throw std::string("the door is closed!");
   }
 }
 
 int TimedDoor::get_time() { return iTimeout; }
+
 
 /* TIMER */
 
