@@ -45,7 +45,7 @@ int TimedDoor::get_time() { return iTimeout; }
 /* TIMER */
 
 void Timer::sleep(int t) { time_t st = time(nullptr);
-  while ((time(nullptr) - st) <= t) {
+  while ((time(nullptr) - st) < t) {
     continue;
   }
 }
