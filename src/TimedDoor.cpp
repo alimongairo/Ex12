@@ -1,8 +1,8 @@
 // Copyright 2021 by idpass
 #include "TimedDoor.h"
+#include <time.h>
 #include <iostream>
 #include <string>
-#include <time.h>
 
 /* DOOR TIMER ADAPTER */
 
